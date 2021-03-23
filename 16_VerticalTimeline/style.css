@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+    
+}
+
+body{
+    background: #025bf6;
+}
+
+.timeline-area{
+    margin: 90px auto;
+    width: 400px;
+    padding: 10px 20px 10px 30px;
+    border-left:2px solid #ccc ;
+}
+
+.timeline-area .box{
+    background-color: #fff;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    position: relative;
+    height: 120px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.timeline-area .box::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    background-color: #000;
+    top: calc(50% - 5px);
+    left: -40px;
+}
+
+.timeline-area .box .triangle{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd;
+    border-right: none;
+    border-top: none;
+    position: absolute;
+    transform: rotate(45deg);
+    top: calc(50% - 8px);
+    left: -11px;
+}
+
+.timeline-area .box h2{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.timeline-area .box h3{
+    margin: 0;
+    text-transform: uppercase;
+}
+.timeline-area .box h4{
+    margin: 0;
+    text-transform: uppercase;
+}
